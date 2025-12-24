@@ -1,0 +1,32 @@
+.home {
+    padding: 20px 0;
+}
+
+.home__header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.home__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home__search {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.home__input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.home__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}

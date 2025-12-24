@@ -1,0 +1,12 @@
+.layout__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.layout__footer {
+    text-align: center;
+    padding: 40px;
+    background: #eee;
+    margin-top: 40px;
+}

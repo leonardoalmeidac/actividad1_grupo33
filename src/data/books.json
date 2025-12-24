@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "title": "El Enigma de la Memoria",
+        "author": "Elena Martínez",
+        "price": 24.99,
+        "description": "Un viaje fascinante a través de los recuerdos perdidos y los secretos familiares que definen quiénes somos.",
+        "category": "Misterio",
+        "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 2,
+        "title": "Sinfonía del Espacio",
+        "author": "Julián Castro",
+        "price": 19.50,
+        "description": "Una epopeya espacial donde la música es la clave para la supervivencia de la humanidad en galaxias lejanas.",
+        "category": "Ciencia Ficción",
+        "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+        "id": 3,
+        "title": "Susurros del Tiempo",
+        "author": "Isabel Allende",
+        "price": 22.00,
+        "description": "Una novela histórica que entrelaza las vidas de tres generaciones marcadas por un destino compartido.",
+        "category": "Histórica",
+        "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+        "id": 4,
+        "title": "Código Abstracto",
+        "author": "Alan Turin",
+        "price": 35.00,
+        "description": "La guía definitiva para comprender los algoritmos que rigen nuestro mundo moderno paso a paso.",
+        "category": "Tecnología",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 5,
+        "title": "El Jardín Olvidado",
+        "author": "Maya Green",
+        "price": 18.25,
+        "description": "Encuentra la paz y la conexión con la naturaleza a través de este relato íntimo sobre el renacer personal.",
+        "category": "Bienestar",
+        "image": "https://images.unsplash.com/photo-1589998059171-988d887df646?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+        "id": 6,
+        "title": "Crónicas del Mañana",
+        "author": "Arthur Clarke",
+        "price": 21.99,
+        "description": "Visiones de un futuro posible donde la tecnología y la ética colisionan en cada decisión humana.",
+        "category": "Ciencia Ficción",
+        "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=500&auto=format&fit=crop&q=60"
+    },
+    {
+        "id": 7,
+        "title": "Java: El Lenguaje de la Industria",
+        "author": "Laura Server",
+        "price": 32.50,
+        "description": "Explora el poder de Java, el lenguaje pilar de aplicaciones empresariales y Android. Aprende desde sintaxis básica hasta programación orientada a objetos sofisticada.",
+        "category": "Programación",
+        "image": "/assets/java_book.png"
+    },
+    {
+        "id": 8,
+        "title": "Node.js: El Corazón del Backend",
+        "author": "Laura Server",
+        "price": 32.50,
+        "description": "Aprende a construir servidores escalables y APIs robustas utilizando el entorno de ejecución de JavaScript más potente.",
+        "category": "Programación",
+        "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 9,
+        "title": "Full Stack: De Cero a Héroe",
+        "author": "Victor Developer",
+        "price": 39.99,
+        "description": "La guía definitiva para convertirte en un desarrollador Full Stack. Cubre desde el diseño de interfaces hasta la gestión de bases de datos y despliegue.",
+        "category": "Programación",
+        "image": "/assets/fullstack_book.png"
+    }
+]
