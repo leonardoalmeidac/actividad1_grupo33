@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Button from '../components/Button';
 import './Landing.css';
 
 const Landing = () => {
@@ -19,10 +20,11 @@ const Landing = () => {
                 <p className="landing__subtitle">Tu próxima historia comienza aquí</p>
                 <div className="landing__loader"></div>
                 <p className="landing__redirect-text">Entrando en 5 segundos...</p>
-                <button className="btn btn--primary" onClick={() => navigate('/home')}>Acceder ahora</button>
+                <Button variant="primary" onClick={() => navigate('/home')}>Acceder ahora</Button>
             </div>
         </div>
     );
 };
 
 export default Landing;
+
