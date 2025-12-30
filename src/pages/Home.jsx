@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import BookCard from '../components/BookCard';
 import booksData from '../data/books.json';
@@ -8,8 +8,15 @@ import { useSearch } from '../hooks/useSearch';
 import './Home.css';
 
 const Home = () => {
-    const { searchTerm, setSearchTerm, filteredItems: filteredBooks } = useSearch(booksData, 'title');
+    const [selectedCategory, setSelectedCategory] = useState('Todos');
+    const { searchTerm, setSearchTerm, filteredItems: searchedBooks } = useSearch(booksData, 'title');
     const { addToCart } = useCart();
+
+    const categories = ['Todos', ...new Set(booksData.map(book => book.category))];
+
+    const filteredBooks = searchedBooks.filter(book =>
+        selectedCategory === 'Todos' || book.category === selectedCategory
+    );
 
     return (
         <Layout>
@@ -25,15 +32,37 @@ const Home = () => {
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
                     </div>
+                    <div className="home__categories">
+                        {categories.map(cat => (
+                            <button
+                                key={cat}
+                                className={`home__category-btn ${selectedCategory === cat ? 'home__category-btn--active' : ''}`}
+                                onClick={() => setSelectedCategory(cat)}
+                            >
+                                {cat}
+                            </button>
+                        ))}
+                    </div>
                 </header>
-                <div className="home__grid">
-                    {filteredBooks.map(book => (
-                        <BookCard key={book.id} book={book} onAddToCart={addToCart} />
-                    ))}
-                </div>
+
+                {filteredBooks.length > 0 ? (
+                    <div className="home__grid">
+                        {filteredBooks.map(book => (
+                            <BookCard key={book.id} book={book} onAddToCart={addToCart} />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="home__no-results">
+                        <p>No se encontraron libros que coincidan con tu búsqueda.</p>
+                        <button className="btn btn--primary" onClick={() => { setSearchTerm(''); setSelectedCategory('Todos'); }}>
+                            Ver todos los libros
+                        </button>
+                    </div>
+                )}
             </section>
         </Layout>
     );
 };
 
 export default Home;
+

@@ -5,6 +5,7 @@ export const useSearch = (items, searchField) => {
 
     const filteredItems = useMemo(() => {
         if (!searchTerm) return items;
+
         return items.filter(item =>
             item[searchField].toLowerCase().includes(searchTerm.toLowerCase())
         );
